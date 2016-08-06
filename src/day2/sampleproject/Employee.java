@@ -14,7 +14,11 @@ public class Employee {
 		this.grade = grade;
 	}
 	
-	public String getEmpInfo(){
+//	public String getEmpInfo(){
+//		return empName + "(" + grade + ")";
+//	}
+
+	public String toString(){
 		return empName + "(" + grade + ")";
 	}
 }

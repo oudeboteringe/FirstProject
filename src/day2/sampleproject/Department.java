@@ -33,9 +33,9 @@ public class Department {
 					+ "\nBudget: " + this.budget
 					+ "\nEmployees:";
 			for(Employee x : emps){
-				if (x != null){
-					temp += x.getEmpInfo() + " ";
-				}
+				//if (x != null){
+					temp += x + " ";
+				//}
 			}
 			System.out.println(temp);
 		}
