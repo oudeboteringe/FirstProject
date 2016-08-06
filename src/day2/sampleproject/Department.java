@@ -1,11 +1,15 @@
 package day2.sampleproject;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Department {
 
 		private String deptName;
 		private double budget;
-		private Employee[] emps = new Employee[5];
-		private int counter = 0;
+		//private Employee[] emps = new Employee[5];
+		private List<Employee> emps = new ArrayList<>();
+		//private int counter = 0;
 		
 		public Department (String deptName){
 			this.deptName = deptName;
@@ -13,8 +17,8 @@ public class Department {
 		}
 		
 		public void AddEmployee(Employee obj){
-			emps[counter] = obj;
-			counter++;
+			emps.add(obj);
+			//counter++;
 			
 			if (obj.getGrade() >= 5){
 				this.budget += 150000;
