@@ -1,6 +1,6 @@
 package day1.examples;
 
-public class ExampleAndaOr {
+public class ExampleAndOr {
 
 	public static void main(String[] args) {
 		int x, y;
